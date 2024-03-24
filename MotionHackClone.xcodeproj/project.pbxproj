@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
+		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
+		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
+		A860B4D82BAFCF1700E0D60C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D72BAFCF1700E0D60C /* Preview Assets.xcassets */; };
+		A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D92BAFCF1700E0D60C /* Persistence.swift */; };
+		A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A860B4DB2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld */; };
+		A860B4E72BAFCF1800E0D60C /* MotionHackCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4E62BAFCF1800E0D60C /* MotionHackCloneTests.swift */; };
+		A860B4F12BAFCF1800E0D60C /* MotionHackCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4F02BAFCF1800E0D60C /* MotionHackCloneUITests.swift */; };
+		A860B4F32BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A860B4E32BAFCF1800E0D60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A860B4C52BAFCF1200E0D60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A860B4CC2BAFCF1200E0D60C;
+			remoteInfo = MotionHackClone;
+		};
+		A860B4ED2BAFCF1800E0D60C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A860B4C52BAFCF1200E0D60C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A860B4CC2BAFCF1200E0D60C;
+			remoteInfo = MotionHackClone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
+		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A860B4D42BAFCF1700E0D60C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A860B4D72BAFCF1700E0D60C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A860B4D92BAFCF1700E0D60C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		A860B4DC2BAFCF1700E0D60C /* MotionHackClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MotionHackClone.xcdatamodel; sourceTree = "<group>"; };
+		A860B4E22BAFCF1800E0D60C /* MotionHackCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionHackCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A860B4E62BAFCF1800E0D60C /* MotionHackCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneTests.swift; sourceTree = "<group>"; };
+		A860B4EC2BAFCF1800E0D60C /* MotionHackCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionHackCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A860B4F02BAFCF1800E0D60C /* MotionHackCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITests.swift; sourceTree = "<group>"; };
+		A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A860B4CA2BAFCF1200E0D60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4DF2BAFCF1800E0D60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4E92BAFCF1800E0D60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A860B4C42BAFCF1200E0D60C = {
+			isa = PBXGroup;
+			children = (
+				A860B4CF2BAFCF1200E0D60C /* MotionHackClone */,
+				A860B4E52BAFCF1800E0D60C /* MotionHackCloneTests */,
+				A860B4EF2BAFCF1800E0D60C /* MotionHackCloneUITests */,
+				A860B4CE2BAFCF1200E0D60C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A860B4CE2BAFCF1200E0D60C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */,
+				A860B4E22BAFCF1800E0D60C /* MotionHackCloneTests.xctest */,
+				A860B4EC2BAFCF1800E0D60C /* MotionHackCloneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A860B4CF2BAFCF1200E0D60C /* MotionHackClone */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
+				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
+				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
+				A860B4D92BAFCF1700E0D60C /* Persistence.swift */,
+				A860B4DB2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld */,
+				A860B4D62BAFCF1700E0D60C /* Preview Content */,
+			);
+			path = MotionHackClone;
+			sourceTree = "<group>";
+		};
+		A860B4D62BAFCF1700E0D60C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4D72BAFCF1700E0D60C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A860B4E52BAFCF1800E0D60C /* MotionHackCloneTests */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4E62BAFCF1800E0D60C /* MotionHackCloneTests.swift */,
+			);
+			path = MotionHackCloneTests;
+			sourceTree = "<group>";
+		};
+		A860B4EF2BAFCF1800E0D60C /* MotionHackCloneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4F02BAFCF1800E0D60C /* MotionHackCloneUITests.swift */,
+				A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */,
+			);
+			path = MotionHackCloneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A860B4CC2BAFCF1200E0D60C /* MotionHackClone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A860B4F62BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackClone" */;
+			buildPhases = (
+				A860B4C92BAFCF1200E0D60C /* Sources */,
+				A860B4CA2BAFCF1200E0D60C /* Frameworks */,
+				A860B4CB2BAFCF1200E0D60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionHackClone;
+			productName = MotionHackClone;
+			productReference = A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A860B4E12BAFCF1800E0D60C /* MotionHackCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A860B4F92BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackCloneTests" */;
+			buildPhases = (
+				A860B4DE2BAFCF1800E0D60C /* Sources */,
+				A860B4DF2BAFCF1800E0D60C /* Frameworks */,
+				A860B4E02BAFCF1800E0D60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A860B4E42BAFCF1800E0D60C /* PBXTargetDependency */,
+			);
+			name = MotionHackCloneTests;
+			productName = MotionHackCloneTests;
+			productReference = A860B4E22BAFCF1800E0D60C /* MotionHackCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A860B4EB2BAFCF1800E0D60C /* MotionHackCloneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A860B4FC2BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackCloneUITests" */;
+			buildPhases = (
+				A860B4E82BAFCF1800E0D60C /* Sources */,
+				A860B4E92BAFCF1800E0D60C /* Frameworks */,
+				A860B4EA2BAFCF1800E0D60C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A860B4EE2BAFCF1800E0D60C /* PBXTargetDependency */,
+			);
+			name = MotionHackCloneUITests;
+			productName = MotionHackCloneUITests;
+			productReference = A860B4EC2BAFCF1800E0D60C /* MotionHackCloneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A860B4C52BAFCF1200E0D60C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A860B4CC2BAFCF1200E0D60C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A860B4E12BAFCF1800E0D60C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A860B4CC2BAFCF1200E0D60C;
+					};
+					A860B4EB2BAFCF1800E0D60C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A860B4CC2BAFCF1200E0D60C;
+					};
+				};
+			};
+			buildConfigurationList = A860B4C82BAFCF1200E0D60C /* Build configuration list for PBXProject "MotionHackClone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A860B4C42BAFCF1200E0D60C;
+			productRefGroup = A860B4CE2BAFCF1200E0D60C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A860B4CC2BAFCF1200E0D60C /* MotionHackClone */,
+				A860B4E12BAFCF1800E0D60C /* MotionHackCloneTests */,
+				A860B4EB2BAFCF1800E0D60C /* MotionHackCloneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A860B4CB2BAFCF1200E0D60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A860B4D82BAFCF1700E0D60C /* Preview Assets.xcassets in Resources */,
+				A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4E02BAFCF1800E0D60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4EA2BAFCF1800E0D60C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A860B4C92BAFCF1200E0D60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */,
+				A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */,
+				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
+				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4DE2BAFCF1800E0D60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A860B4E72BAFCF1800E0D60C /* MotionHackCloneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A860B4E82BAFCF1800E0D60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A860B4F12BAFCF1800E0D60C /* MotionHackCloneUITests.swift in Sources */,
+				A860B4F32BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A860B4E42BAFCF1800E0D60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A860B4CC2BAFCF1200E0D60C /* MotionHackClone */;
+			targetProxy = A860B4E32BAFCF1800E0D60C /* PBXContainerItemProxy */;
+		};
+		A860B4EE2BAFCF1800E0D60C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A860B4CC2BAFCF1200E0D60C /* MotionHackClone */;
+			targetProxy = A860B4ED2BAFCF1800E0D60C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A860B4F42BAFCF1800E0D60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A860B4F52BAFCF1800E0D60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A860B4F72BAFCF1800E0D60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionHackClone/Preview Content\"";
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A860B4F82BAFCF1800E0D60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MotionHackClone/Preview Content\"";
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackClone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A860B4FA2BAFCF1800E0D60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionHackClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MotionHackClone";
+			};
+			name = Debug;
+		};
+		A860B4FB2BAFCF1800E0D60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MotionHackClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MotionHackClone";
+			};
+			name = Release;
+		};
+		A860B4FD2BAFCF1800E0D60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MotionHackClone;
+			};
+			name = Debug;
+		};
+		A860B4FE2BAFCF1800E0D60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HCYSF3K835;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Arzu.MotionHackCloneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MotionHackClone;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A860B4C82BAFCF1200E0D60C /* Build configuration list for PBXProject "MotionHackClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A860B4F42BAFCF1800E0D60C /* Debug */,
+				A860B4F52BAFCF1800E0D60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A860B4F62BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackClone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A860B4F72BAFCF1800E0D60C /* Debug */,
+				A860B4F82BAFCF1800E0D60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A860B4F92BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A860B4FA2BAFCF1800E0D60C /* Debug */,
+				A860B4FB2BAFCF1800E0D60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A860B4FC2BAFCF1800E0D60C /* Build configuration list for PBXNativeTarget "MotionHackCloneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A860B4FD2BAFCF1800E0D60C /* Debug */,
+				A860B4FE2BAFCF1800E0D60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A860B4DB2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A860B4DC2BAFCF1700E0D60C /* MotionHackClone.xcdatamodel */,
+			);
+			currentVersion = A860B4DC2BAFCF1700E0D60C /* MotionHackClone.xcdatamodel */;
+			path = MotionHackClone.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A860B4C52BAFCF1200E0D60C /* Project object */;
+}
