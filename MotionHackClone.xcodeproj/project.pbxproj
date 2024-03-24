@@ -54,7 +54,7 @@
 		A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A860B5092BAFD18700E0D60C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		A860B50E2BAFD85C00E0D60C /* Color+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Default.swift"; sourceTree = "<group>"; };
+		A860B50E2BAFD85C00E0D60C /* Color+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Color+Default.swift"; path = "../New Group/Color+Default.swift"; sourceTree = "<group>"; };
 		A860B5112BAFD9CD00E0D60C /* Images+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Default.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AE12EB72BAFF24D00880D38 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
+				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
+				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8AE12EB82BAFF47400880D38 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
+				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		A860B4C42BAFCF1200E0D60C = {
 			isa = PBXGroup;
 			children = (
@@ -108,9 +127,6 @@
 			children = (
 				A860B50D2BAFD81F00E0D60C /* Common */,
 				A860B4FF2BAFD0C900E0D60C /* Features */,
-				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
-				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
-				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
 				A860B4D92BAFCF1700E0D60C /* Persistence.swift */,
 				A860B4DB2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld */,
 				A860B4D62BAFCF1700E0D60C /* Preview Content */,
@@ -179,8 +195,8 @@
 		A860B50D2BAFD81F00E0D60C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
-				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+				8AE12EB82BAFF47400880D38 /* Core */,
+				8AE12EB72BAFF24D00880D38 /* Resource */,
 			);
 			path = Common;
 			sourceTree = "<group>";
