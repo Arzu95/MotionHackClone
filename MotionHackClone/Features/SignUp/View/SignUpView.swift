@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleSignInSwift
 
 struct SignUpView: View {
     @StateObject var viewModel = SignUpViewModel()
@@ -33,7 +34,13 @@ struct SignUpView: View {
                 Image.or_with
                 HStack(spacing: 17){
                     Button {
-                        
+                        Task {
+                            do {
+                                try await viewModel.googleSignIn()
+                            } catch let e {
+                                print(e.localizedDescription)
+                            }
+                        }
                     } label: {
                         ZStack{
                             RoundedRectangle(cornerRadius: 12)
