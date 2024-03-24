@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-extension Image{
+extension Image {
     static let google: Image = Image("icon-google")
     static let facebook: Image = Image("icon-facebook")
+    static let or_with: Image = Image("or-with")
     static let logo: Image = Image("logo")
 }
