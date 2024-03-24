@@ -80,6 +80,20 @@ struct SignUpView: View {
                 .padding(.top, 37)
             }
             .padding(.horizontal, 30)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    VStack(alignment: .leading) {
+                        Text("Daftarkan diri,")
+                            .font(.system(size: 22))
+                            .bold()
+                        Text("Masukan data diri kamu")
+                            .font(.system(size: 14))
+                            .foregroundColor(Color.black.opacity(0.55))
+                    }
+                    .padding()
+                    .padding(.top, 20)
+                }
+            }
         }
     }
 }

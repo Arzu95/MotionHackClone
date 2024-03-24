@@ -90,14 +90,14 @@ extension LoginView{
             HStack(spacing: 16){
                 Rectangle()
                     .frame(height: 1)
-                    .foregroundColor(.grayy)
+                    .foregroundColor(LocalColor.grayy)
                 Text("atau daftar dengan")
                     .fontWeight(.regular)
                     .font(.system(size: 11))
-                    .foregroundColor(.grayy)
+                    .foregroundColor(LocalColor.grayy)
                 Rectangle()
                     .frame(height: 1)
-                    .foregroundColor(.grayy)
+                    .foregroundColor(LocalColor.grayy)
             }
             .padding(.top, 70)
             
@@ -144,7 +144,7 @@ extension LoginView{
                 Text("Daftar")
                     .font(.system(size: 14))
                     .fontWeight(.bold)
-                    .foregroundColor(.bluee)
+                    .foregroundColor(LocalColor.bluee)
             }
             .padding(.top, 37)
             
