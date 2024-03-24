@@ -16,6 +16,8 @@
 		A860B4E72BAFCF1800E0D60C /* MotionHackCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4E62BAFCF1800E0D60C /* MotionHackCloneTests.swift */; };
 		A860B4F12BAFCF1800E0D60C /* MotionHackCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4F02BAFCF1800E0D60C /* MotionHackCloneUITests.swift */; };
 		A860B4F32BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */; };
+		A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B5092BAFD18700E0D60C /* LoginView.swift */; };
+		A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A860B4EC2BAFCF1800E0D60C /* MotionHackCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotionHackCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4F02BAFCF1800E0D60C /* MotionHackCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITests.swift; sourceTree = "<group>"; };
 		A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A860B5092BAFD18700E0D60C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		A860B4CF2BAFCF1200E0D60C /* MotionHackClone */ = {
 			isa = PBXGroup;
 			children = (
+				A860B4FF2BAFD0C900E0D60C /* Features */,
 				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
 				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
 				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
@@ -131,6 +136,39 @@
 				A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */,
 			);
 			path = MotionHackCloneUITests;
+			sourceTree = "<group>";
+		};
+		A860B4FF2BAFD0C900E0D60C /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A860B5062BAFD15300E0D60C /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A860B5062BAFD15300E0D60C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A860B5082BAFD16C00E0D60C /* ViewModel */,
+				A860B5072BAFD16800E0D60C /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A860B5072BAFD16800E0D60C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A860B5092BAFD18700E0D60C /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A860B5082BAFD16C00E0D60C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +303,9 @@
 			files = (
 				A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */,
 				A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */,
+				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
+				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
