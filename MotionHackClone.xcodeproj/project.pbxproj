@@ -14,6 +14,9 @@
 		8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0CCFC2BAFFAA400B3AAD9 /* Validator.swift */; };
 		8AE0CCFF2BAFFB3A00B3AAD9 /* ValidatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */; };
 		8AE12EBD2BAFF60100880D38 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE12EBC2BAFF60100880D38 /* SignUpView.swift */; };
+		8AEB04F42BB03060000F19EE /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 8AEB04F32BB03060000F19EE /* FirebaseAppDistribution-Beta */; };
+		8AEB04F62BB03060000F19EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8AEB04F52BB03060000F19EE /* FirebaseAuth */; };
+		8AEB04FA2BB0366E000F19EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEB04F92BB0366D000F19EE /* GoogleService-Info.plist */; };
 		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
 		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
 		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
@@ -54,6 +57,7 @@
 		8AE0CCFC2BAFFAA400B3AAD9 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorModifier.swift; sourceTree = "<group>"; };
 		8AE12EBC2BAFF60100880D38 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		8AEB04F92BB0366D000F19EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
 		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AEB04F42BB03060000F19EE /* FirebaseAppDistribution-Beta in Frameworks */,
+				8AEB04F62BB03060000F19EE /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +189,7 @@
 		A860B4CF2BAFCF1200E0D60C /* MotionHackClone */ = {
 			isa = PBXGroup;
 			children = (
+				8AEB04F92BB0366D000F19EE /* GoogleService-Info.plist */,
 				A860B50D2BAFD81F00E0D60C /* Common */,
 				A860B4FF2BAFD0C900E0D60C /* Features */,
 				A860B4D92BAFCF1700E0D60C /* Persistence.swift */,
@@ -278,6 +285,10 @@
 			dependencies = (
 			);
 			name = MotionHackClone;
+			packageProductDependencies = (
+				8AEB04F32BB03060000F19EE /* FirebaseAppDistribution-Beta */,
+				8AEB04F52BB03060000F19EE /* FirebaseAuth */,
+			);
 			productName = MotionHackClone;
 			productReference = A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */;
 			productType = "com.apple.product-type.application";
@@ -350,6 +361,9 @@
 				Base,
 			);
 			mainGroup = A860B4C42BAFCF1200E0D60C;
+			packageReferences = (
+				8AEB04F22BB03060000F19EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A860B4CE2BAFCF1200E0D60C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A860B4D82BAFCF1700E0D60C /* Preview Assets.xcassets in Resources */,
+				8AEB04FA2BB0366E000F19EE /* GoogleService-Info.plist in Resources */,
 				A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -565,7 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MotionHackClone/Preview Content\"";
-				DEVELOPMENT_TEAM = HCYSF3K835;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -595,7 +610,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MotionHackClone/Preview Content\"";
-				DEVELOPMENT_TEAM = HCYSF3K835;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -733,6 +748,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8AEB04F22BB03060000F19EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8AEB04F32BB03060000F19EE /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AEB04F22BB03060000F19EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		8AEB04F52BB03060000F19EE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8AEB04F22BB03060000F19EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A860B4DB2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld */ = {

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>663046564242-e63csmolef3crkav02o0bh5j9e4etdb0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.663046564242-e63csmolef3crkav02o0bh5j9e4etdb0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBv4_yFyr7ML7ctHrJOeqKpyqDVzsUl980</string>
+	<key>GCM_SENDER_ID</key>
+	<string>663046564242</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.Arzu.MotionHackClone</string>
+	<key>PROJECT_ID</key>
+	<string>motionhack-f21e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>motionhack-f21e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:663046564242:ios:88de17bab516f479e8794b</string>
+</dict>
+</plist>
