@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Color{
+enum LocalColor {
     static let blue: Color = Color("Primary Color - Normal Blue")
 }
 

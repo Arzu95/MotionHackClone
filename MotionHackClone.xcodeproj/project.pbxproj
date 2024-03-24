@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AB6B8542BB010EC007DFB5A /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B8532BB010EC007DFB5A /* ButtonPrimary.swift */; };
+		8ABA78A32BB0067E00518967 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA78A22BB0067E00518967 /* UnderlineTextField.swift */; };
+		8ABA78A52BB0088B00518967 /* UnderlineSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA78A42BB0088B00518967 /* UnderlineSecureField.swift */; };
+		8AE0CCFA2BAFF99500B3AAD9 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0CCF92BAFF99500B3AAD9 /* SignUpViewModel.swift */; };
+		8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0CCFC2BAFFAA400B3AAD9 /* Validator.swift */; };
+		8AE0CCFF2BAFFB3A00B3AAD9 /* ValidatorModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */; };
+		8AE12EBD2BAFF60100880D38 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE12EBC2BAFF60100880D38 /* SignUpView.swift */; };
 		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
 		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
 		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
@@ -40,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8AB6B8532BB010EC007DFB5A /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		8ABA78A22BB0067E00518967 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
+		8ABA78A42BB0088B00518967 /* UnderlineSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSecureField.swift; sourceTree = "<group>"; };
+		8AE0CCF92BAFF99500B3AAD9 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		8AE0CCFC2BAFFAA400B3AAD9 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorModifier.swift; sourceTree = "<group>"; };
+		8AE12EBC2BAFF60100880D38 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
 		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +97,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ABA78A12BB0067000518967 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8ABA78A22BB0067E00518967 /* UnderlineTextField.swift */,
+				8ABA78A42BB0088B00518967 /* UnderlineSecureField.swift */,
+				8AB6B8532BB010EC007DFB5A /* ButtonPrimary.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8AE0CCFB2BAFFA9700B3AAD9 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				8AE0CCFC2BAFFAA400B3AAD9 /* Validator.swift */,
+				8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 		8AE12EB72BAFF24D00880D38 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +133,31 @@
 				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		8AE12EB92BAFF5E300880D38 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				8AE12EBB2BAFF5F200880D38 /* ViewModel */,
+				8AE12EBA2BAFF5EE00880D38 /* View */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		8AE12EBA2BAFF5EE00880D38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AE12EBC2BAFF60100880D38 /* SignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AE12EBB2BAFF5F200880D38 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AE0CCF92BAFF99500B3AAD9 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A860B4C42BAFCF1200E0D60C = {
@@ -162,6 +220,7 @@
 		A860B4FF2BAFD0C900E0D60C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8AE12EB92BAFF5E300880D38 /* SignUp */,
 				A860B5062BAFD15300E0D60C /* Login */,
 			);
 			path = Features;
@@ -195,6 +254,8 @@
 		A860B50D2BAFD81F00E0D60C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8ABA78A12BB0067000518967 /* Components */,
+				8AE0CCFB2BAFFA9700B3AAD9 /* Validator */,
 				8AE12EB82BAFF47400880D38 /* Core */,
 				8AE12EB72BAFF24D00880D38 /* Resource */,
 			);
@@ -331,14 +392,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABA78A32BB0067E00518967 /* UnderlineTextField.swift in Sources */,
 				A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */,
 				A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */,
+				8AE0CCFA2BAFF99500B3AAD9 /* SignUpViewModel.swift in Sources */,
 				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
+				8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */,
 				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
 				A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */,
+				8AB6B8542BB010EC007DFB5A /* ButtonPrimary.swift in Sources */,
 				A860B50F2BAFD85C00E0D60C /* Color+Default.swift in Sources */,
+				8ABA78A52BB0088B00518967 /* UnderlineSecureField.swift in Sources */,
+				8AE12EBD2BAFF60100880D38 /* SignUpView.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
+				8AE0CCFF2BAFFB3A00B3AAD9 /* ValidatorModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
