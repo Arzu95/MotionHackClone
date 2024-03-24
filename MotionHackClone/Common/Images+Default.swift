@@ -10,4 +10,5 @@ import SwiftUI
 extension Image{
     static let google: Image = Image("icon-google")
     static let facebook: Image = Image("icon-facebook")
+    static let logo: Image = Image("logo")
 }
