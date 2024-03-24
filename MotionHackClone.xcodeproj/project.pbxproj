@@ -18,6 +18,8 @@
 		A860B4F32BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */; };
 		A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B5092BAFD18700E0D60C /* LoginView.swift */; };
 		A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */; };
+		A860B50F2BAFD85C00E0D60C /* Color+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B50E2BAFD85C00E0D60C /* Color+Default.swift */; };
+		A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B5112BAFD9CD00E0D60C /* Images+Default.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		A860B4F22BAFCF1800E0D60C /* MotionHackCloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A860B5092BAFD18700E0D60C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		A860B50E2BAFD85C00E0D60C /* Color+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Default.swift"; sourceTree = "<group>"; };
+		A860B5112BAFD9CD00E0D60C /* Images+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images+Default.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		A860B4CF2BAFCF1200E0D60C /* MotionHackClone */ = {
 			isa = PBXGroup;
 			children = (
+				A860B50D2BAFD81F00E0D60C /* Common */,
 				A860B4FF2BAFD0C900E0D60C /* Features */,
 				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
 				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
@@ -169,6 +174,15 @@
 				A860B50B2BAFD19900E0D60C /* LoginViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A860B50D2BAFD81F00E0D60C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
+				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +320,8 @@
 				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
 				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
+				A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */,
+				A860B50F2BAFD85C00E0D60C /* Color+Default.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
