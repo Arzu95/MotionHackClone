@@ -10,6 +10,7 @@ import SwiftUI
 struct InputSalesDataView: View {
     
     @StateObject var viewModel = SalesDataViewModel()
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         NavigationStack {
@@ -81,6 +82,7 @@ struct InputSalesDataView: View {
                     ButtonPrimary(title: "Kirim", action: {
                         Task {
                             await viewModel.saveLocalSalesData()
+                            self.presentationMode.wrappedValue.dismiss()
                         }
                     })
                 }

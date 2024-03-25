@@ -7,13 +7,14 @@
 
 import Foundation
 
-class SalesDataModel : Codable {
+class SalesDataModel : Codable, Identifiable {
+    var id = UUID()
     let name: String?
     let date: Date?
-    let totalSales: Int?
+    let totalSales: Double?
     let totalQuantity: String?
     
-    init(name: String?, date: Date, totalSales: Int, totalQuantity: String) {
+    init(name: String?, date: Date, totalSales: Double, totalQuantity: String) {
         self.name = name
         self.date = date
         self.totalSales = totalSales

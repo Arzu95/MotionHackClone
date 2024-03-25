@@ -24,6 +24,20 @@ final class SalesDataViewModel : ObservableObject {
         self.repository = repository
     }
     
+    func totalSalesData() -> Double {
+        var total: Double = 0
+        do {
+            let dataSales = try repository.sumTotalSalesData(by: salesListData)
+            total = dataSales
+        } catch {
+            DispatchQueue.main.sync {
+                self.error = "\(error)"
+            }
+        }
+        print(total)
+        return total
+    }
+    
     func saveDate() -> String {
         fieldDate = selectionDate.formatted()
         return fieldDate
@@ -62,7 +76,7 @@ final class SalesDataViewModel : ObservableObject {
         let sales = SalesDataModel(
             name: fieldNameDesc,
             date: selectionDate,
-            totalSales: Int(fieldTotalSales) ?? 0,
+            totalSales: Double(fieldTotalSales) ?? 0.0,
             totalQuantity: fieldTotalQuantity)
         
         do {

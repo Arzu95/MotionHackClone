@@ -10,7 +10,7 @@ import SwiftUI
 import CoreData
 
 final class SalesDataDefaultLocalDataSouce: SalesDataLocalDataSource {
-    
+
     private let container: NSPersistentContainer
     
     init(persistenStorage : NSPersistentContainer = PersistenceController.shared.container) {
@@ -22,12 +22,11 @@ final class SalesDataDefaultLocalDataSouce: SalesDataLocalDataSource {
         
         entity.nama_barang = salesData.name
         entity.tanggal_input = salesData.date
-        entity.total_penjualan = Int32(salesData.totalSales ?? 0)
+        entity.total_penjualan = salesData.totalSales ?? 0
         entity.total_kuantitas = salesData.totalQuantity
         
         if container.viewContext.hasChanges {
             try container.viewContext.save()
-            print(entity.nama_barang)
         }
     }
     
@@ -55,5 +54,13 @@ final class SalesDataDefaultLocalDataSouce: SalesDataLocalDataSource {
         if container.viewContext.hasChanges {
             try container.viewContext.save()
         }
+    }
+    
+    func sumTotalSales(by salesData: [SalesData]) throws -> Double {
+        var totalSales: Double = 0
+        for sale in salesData {
+            totalSales += sale.total_penjualan
+        }
+        return totalSales
     }
 }

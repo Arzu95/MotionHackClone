@@ -26,4 +26,9 @@ final class SalesDataDefaultRepo : SalesDataRepository {
     func deleteLocalSalesData() throws {
         try self.salesDatalocal.deleteLocalSalesDataDS()
     }
+    
+    func sumTotalSalesData(by salesData: [SalesData]) throws -> Double {
+        try self.salesDatalocal.sumTotalSales(by: salesData)
+    }
+
 }
