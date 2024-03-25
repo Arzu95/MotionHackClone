@@ -20,7 +20,7 @@ struct UnderlineSecureField: View {
                 .foregroundColor(Color.black.opacity(0.55))
                 .font(.system(size: 14))
             HStack {
-                TextField("", text: $text)
+                SecureField("", text: $text)
                 Button(action: action, label: {
                     Image(systemName: isVisible ? "eye.slash.fill" : "eye.fill")
                         .foregroundColor(Color.black.opacity(0.55))

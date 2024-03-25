@@ -10,6 +10,7 @@ import SwiftUI
 struct UnderlineTextField: View {
     @Binding var text: String
     var title: String
+    @State var isSecure: Bool = true
     
     var body: some View {
         VStack(alignment: .leading) {
