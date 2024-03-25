@@ -10,11 +10,6 @@ import SwiftUI
 struct OTPSuccessView: View {
     @State var moveToNextPage: Bool = false
     
-    let vm : OTPViewModel
-    init(vm: OTPViewModel) {
-        self.vm = vm
-    }
-    
     var body: some View {
         VStack {
             LocalImage.success
@@ -33,6 +28,6 @@ struct OTPSuccessView: View {
 
 struct OTPSuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        OTPSuccessView(vm: OTPViewModel())
+        OTPSuccessView()
     }
 }

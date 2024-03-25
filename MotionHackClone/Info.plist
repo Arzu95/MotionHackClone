@@ -9,5 +9,16 @@
 		<string>Poppins-Bold.ttf</string>
 		<string>Poppins-Medium.ttf</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.663046564242-e63csmolef3crkav02o0bh5j9e4etdb0</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>
