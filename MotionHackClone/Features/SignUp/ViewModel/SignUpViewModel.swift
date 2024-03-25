@@ -21,6 +21,22 @@ class SignUpViewModel : ObservableObject{
     
     var confirmPassword: Bool = false
     
+    func signUp() {
+        guard !fieldEmail.isEmpty, !fieldPasssword.isEmpty else {
+            fatalError("No Email and Password Found")
+        }
+        
+        Task {
+            do {
+                let userData = try await Authentication.shared.signUpUser(email: fieldEmail, password: fieldPasssword)
+                print("Succes Sign Up")
+                print(userData)
+            } catch {
+                print("Error : \(error)")
+            }
+        }
+    }
+    
     func googleSignIn() async throws {
     
         guard let clientID = FirebaseApp.app()?.options.clientID else {

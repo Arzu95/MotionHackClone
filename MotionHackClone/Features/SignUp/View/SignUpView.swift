@@ -13,24 +13,22 @@ struct SignUpView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                TextFormView { validate in
-                    VStack {
-                        UnderlineTextField(text: $viewModel.fieldNama, title: "Nama")
-                            .padding(.top)
-                        UnderlineTextField(text: $viewModel.fieldEmail, title: "Email")
-                            .padding(.top)
-                        UnderlineSecureField(text: $viewModel.fieldPasssword, title: "Kata Sandi", isVisible: viewModel.isVisiblePassword, action: {
-                            viewModel.isVisiblePassword.toggle()
-                        })
+                
+                VStack {
+                    UnderlineTextField(text: $viewModel.fieldNama, title: "Nama")
                         .padding(.top)
-                        UnderlineSecureField(text: $viewModel.fieldConfirmPassword, title: "Konfirmasi Kata Sandi", isVisible: viewModel.isVisibleConfirm, action: {
-                            viewModel.isVisibleConfirm.toggle()
-                        })
+                    UnderlineTextField(text: $viewModel.fieldEmail, title: "Email")
                         .padding(.top)
-                    }
+                        .textInputAutocapitalization(.never)
+                    UnderlineSecureField(text: $viewModel.fieldPasssword, title: "Kata Sandi", isVisible: viewModel.isVisiblePassword, action: {viewModel.isVisiblePassword.toggle()})
+                    UnderlineSecureField(text: $viewModel.fieldConfirmPassword, title: "Konfirmasi Kata Sandi", isVisible: viewModel.isVisibleConfirm, action: {viewModel.isVisibleConfirm.toggle()})
+                    .padding(.top)
                 }
-                ButtonPrimary(title: "Daftar", action: {})
-                    .padding(.bottom, 48)
+                
+                ButtonPrimary(title: "Daftar", action: {
+                    viewModel.signUp()
+                })
+                .padding(.bottom, 48)
                 Image.or_with
                 HStack(spacing: 17){
                     Button {
