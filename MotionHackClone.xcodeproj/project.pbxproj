@@ -187,6 +187,8 @@
 		43D5D5E32BB1B1A100C4715B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
+				4BEC9A362BB1FA1900A8A351 /* Images+Default.swift */,
 				4387D1672BB0649500FD9432 /* String+Default.swift */,
 				4387D1652BB05E9600FD9432 /* Font+Default.swift */,
 				A860B5112BAFD9CD00E0D60C /* LocalImage.swift */,
@@ -304,15 +306,6 @@
 				8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */,
 			);
 			path = Validator;
-			sourceTree = "<group>";
-		};
-		8AE12EB72BAFF24D00880D38 /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				4BEC9A362BB1FA1900A8A351 /* Images+Default.swift */,
-				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
-			);
-			path = Resource;
 			sourceTree = "<group>";
 		};
 		8AE12EB82BAFF47400880D38 /* Core */ = {
@@ -453,7 +446,6 @@
 				8ABA78A12BB0067000518967 /* Components */,
 				8AE0CCFB2BAFFA9700B3AAD9 /* Validator */,
 				8AE12EB82BAFF47400880D38 /* Core */,
-				8AE12EB72BAFF24D00880D38 /* Resource */,
 				43D5D5E52BB1B25A00C4715B /* Reusable */,
 				43D5D5E32BB1B1A100C4715B /* Resources */,
 			);
