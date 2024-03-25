@@ -13,7 +13,6 @@ struct SignUpView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                
                 VStack {
                     UnderlineTextField(text: $viewModel.fieldNama, title: "Nama")
                         .padding(.top)
@@ -77,14 +76,17 @@ struct SignUpView: View {
                     Text("Belum memiliki akun?")
                         .fontWeight(.regular)
                         .font(.system(size: 14))
-                    Text("Daftar")
-                        .font(.system(size: 14))
-                        .fontWeight(.bold)
-                        .foregroundColor(LocalColor.blue)
+                    NavigationLink(destination: LoginView(), label: {
+                        Text("Login")
+                            .font(.system(size: 14))
+                            .fontWeight(.bold)
+                            .foregroundColor(LocalColor.blue)
+                    })
                 }
                 .padding(.top, 37)
             }
             .padding(.horizontal, 30)
+            .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     VStack(alignment: .leading) {
