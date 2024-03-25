@@ -25,7 +25,7 @@ struct MotionHackCloneApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SignUpView()
+            InputSalesDataView()
                 .onOpenURL(perform: { url in
                     GIDSignIn.sharedInstance.handle(url)
                 })

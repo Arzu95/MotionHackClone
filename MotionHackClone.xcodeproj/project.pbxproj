@@ -21,6 +21,14 @@
 		8AEB04FD2BB0519A000F19EE /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8AEB04FC2BB0519A000F19EE /* GoogleSignIn */; };
 		8AEB04FF2BB0519A000F19EE /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8AEB04FE2BB0519A000F19EE /* GoogleSignInSwift */; };
 		8AEF89BD2BB07F7500F2ADBF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8AEF89BC2BB07F7500F2ADBF /* GoogleService-Info.plist */; };
+		8AF3BB022BB14C6900211357 /* SalesDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB012BB14C6900211357 /* SalesDataView.swift */; };
+		8AF3BB042BB14CD700211357 /* InputSalesDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB032BB14CD700211357 /* InputSalesDataView.swift */; };
+		8AF3BB062BB14E8900211357 /* SalesDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB052BB14E8900211357 /* SalesDataViewModel.swift */; };
+		8AF3BB0D2BB1731D00211357 /* SalesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB0C2BB1731D00211357 /* SalesDataModel.swift */; };
+		8AF3BB0F2BB1741500211357 /* SalesDataDefaultRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB0E2BB1741500211357 /* SalesDataDefaultRepo.swift */; };
+		8AF3BB112BB1742C00211357 /* SalesDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB102BB1742C00211357 /* SalesDataRepo.swift */; };
+		8AF3BB132BB1751B00211357 /* SalesDataLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB122BB1751B00211357 /* SalesDataLocalDataSource.swift */; };
+		8AF3BB152BB175B900211357 /* SalesDataDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB142BB175B900211357 /* SalesDataDefaultLocalDataSource.swift */; };
 		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
 		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
 		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
@@ -64,6 +72,14 @@
 		8AE0CCFE2BAFFB3A00B3AAD9 /* ValidatorModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorModifier.swift; sourceTree = "<group>"; };
 		8AE12EBC2BAFF60100880D38 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8AEF89BC2BB07F7500F2ADBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8AF3BB012BB14C6900211357 /* SalesDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataView.swift; sourceTree = "<group>"; };
+		8AF3BB032BB14CD700211357 /* InputSalesDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSalesDataView.swift; sourceTree = "<group>"; };
+		8AF3BB052BB14E8900211357 /* SalesDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataViewModel.swift; sourceTree = "<group>"; };
+		8AF3BB0C2BB1731D00211357 /* SalesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataModel.swift; sourceTree = "<group>"; };
+		8AF3BB0E2BB1741500211357 /* SalesDataDefaultRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataDefaultRepo.swift; sourceTree = "<group>"; };
+		8AF3BB102BB1742C00211357 /* SalesDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataRepo.swift; sourceTree = "<group>"; };
+		8AF3BB122BB1751B00211357 /* SalesDataLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataLocalDataSource.swift; sourceTree = "<group>"; };
+		8AF3BB142BB175B900211357 /* SalesDataDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataDefaultLocalDataSource.swift; sourceTree = "<group>"; };
 		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
 		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -114,6 +130,8 @@
 		8A17E5CA2BB126DF008E7F4D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8AF3BB092BB1727F00211357 /* SalesData */,
+				8AF3BB072BB1688F00211357 /* Authentication */,
 				8A17E5CC2BB127A8008E7F4D /* Authentication.swift */,
 			);
 			path = Data;
@@ -122,17 +140,10 @@
 		8A17E5CE2BB12836008E7F4D /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				8A17E5CF2BB1283B008E7F4D /* User */,
+				8A17E5D12BB1286F008E7F4D /* UserModel.swift */,
+				8AF3BB0C2BB1731D00211357 /* SalesDataModel.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		8A17E5CF2BB1283B008E7F4D /* User */ = {
-			isa = PBXGroup;
-			children = (
-				8A17E5D12BB1286F008E7F4D /* UserModel.swift */,
-			);
-			path = User;
 			sourceTree = "<group>";
 		};
 		8ABA78A12BB0067000518967 /* Components */ = {
@@ -198,6 +209,58 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8AF3BAFE2BB14C1A00211357 /* SalesData */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3BB002BB14C4400211357 /* View */,
+				8AF3BAFF2BB14C3C00211357 /* ViewModel */,
+			);
+			path = SalesData;
+			sourceTree = "<group>";
+		};
+		8AF3BAFF2BB14C3C00211357 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3BB052BB14E8900211357 /* SalesDataViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8AF3BB002BB14C4400211357 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3BB012BB14C6900211357 /* SalesDataView.swift */,
+				8AF3BB032BB14CD700211357 /* InputSalesDataView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AF3BB072BB1688F00211357 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		8AF3BB092BB1727F00211357 /* SalesData */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3BB0E2BB1741500211357 /* SalesDataDefaultRepo.swift */,
+				8AF3BB102BB1742C00211357 /* SalesDataRepo.swift */,
+				8AF3BB0A2BB1729800211357 /* Local */,
+			);
+			path = SalesData;
+			sourceTree = "<group>";
+		};
+		8AF3BB0A2BB1729800211357 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				8AF3BB122BB1751B00211357 /* SalesDataLocalDataSource.swift */,
+				8AF3BB142BB175B900211357 /* SalesDataDefaultLocalDataSource.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
 		A860B4C42BAFCF1200E0D60C = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +322,7 @@
 		A860B4FF2BAFD0C900E0D60C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				8AF3BAFE2BB14C1A00211357 /* SalesData */,
 				8AE12EB92BAFF5E300880D38 /* SignUp */,
 				A860B5062BAFD15300E0D60C /* Login */,
 			);
@@ -447,16 +511,24 @@
 				8ABA78A32BB0067E00518967 /* UnderlineTextField.swift in Sources */,
 				A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */,
 				A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */,
+				8AF3BB042BB14CD700211357 /* InputSalesDataView.swift in Sources */,
+				8AF3BB0F2BB1741500211357 /* SalesDataDefaultRepo.swift in Sources */,
 				8AE0CCFA2BAFF99500B3AAD9 /* SignUpViewModel.swift in Sources */,
 				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
+				8AF3BB022BB14C6900211357 /* SalesDataView.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
 				8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */,
+				8AF3BB062BB14E8900211357 /* SalesDataViewModel.swift in Sources */,
 				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
 				8A17E5D22BB1286F008E7F4D /* UserModel.swift in Sources */,
 				A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */,
+				8AF3BB112BB1742C00211357 /* SalesDataRepo.swift in Sources */,
 				8AB6B8542BB010EC007DFB5A /* ButtonPrimary.swift in Sources */,
+				8AF3BB152BB175B900211357 /* SalesDataDefaultLocalDataSource.swift in Sources */,
 				A860B50F2BAFD85C00E0D60C /* Color+Default.swift in Sources */,
 				8ABA78A52BB0088B00518967 /* UnderlineSecureField.swift in Sources */,
+				8AF3BB0D2BB1731D00211357 /* SalesDataModel.swift in Sources */,
+				8AF3BB132BB1751B00211357 /* SalesDataLocalDataSource.swift in Sources */,
 				8AE12EBD2BAFF60100880D38 /* SignUpView.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
 				8AE0CCFF2BAFFB3A00B3AAD9 /* ValidatorModifier.swift in Sources */,
