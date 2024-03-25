@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43481F4A2BAFF39D00DACC6E /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F492BAFF39D00DACC6E /* OTPView.swift */; };
+		43481F4D2BB004A500DACC6E /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F4C2BB004A500DACC6E /* OTPViewModel.swift */; };
+		43481F4F2BB01D6600DACC6E /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43481F4E2BB01D6600DACC6E /* Poppins-Bold.ttf */; };
+		43481F512BB01D7500DACC6E /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43481F502BB01D7500DACC6E /* Poppins-Medium.ttf */; };
+		43481F532BB01D8300DACC6E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43481F522BB01D8300DACC6E /* Poppins-Regular.ttf */; };
+		43481F572BB0417600DACC6E /* OTPSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F562BB0417600DACC6E /* OTPSuccessView.swift */; };
+		43481F592BB0422A00DACC6E /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F582BB0422A00DACC6E /* AgreementView.swift */; };
+		4387D1642BB05E5900FD9432 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4387D1632BB05E5900FD9432 /* Poppins-SemiBold.ttf */; };
+		4387D1662BB05E9600FD9432 /* Font+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387D1652BB05E9600FD9432 /* Font+Default.swift */; };
+		4387D1682BB0649500FD9432 /* String+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387D1672BB0649500FD9432 /* String+Default.swift */; };
+		43D5D5E72BB1B26B00C4715B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5E62BB1B26B00C4715B /* ImagePicker.swift */; };
+		43D5D5E92BB1B35B00C4715B /* ImageSizeModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5E82BB1B35B00C4715B /* ImageSizeModifier.swift */; };
+		43D5D5EF2BB1B62400C4715B /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5EE2BB1B62400C4715B /* InputView.swift */; };
+		43D5D5F52BB1BE7200C4715B /* InventoryRecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5F42BB1BE7200C4715B /* InventoryRecordingView.swift */; };
+		43D5D5F92BB1BF7100C4715B /* InventoryRecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5F82BB1BF7100C4715B /* InventoryRecordingViewModel.swift */; };
+		43D5D5FC2BB1C18600C4715B /* InventoryRecordingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D5D5FB2BB1C18600C4715B /* InventoryRecordingModel.swift */; };
 		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
 		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
 		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
@@ -40,6 +56,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43481F492BAFF39D00DACC6E /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
+		43481F4C2BB004A500DACC6E /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
+		43481F4E2BB01D6600DACC6E /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		43481F502BB01D7500DACC6E /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		43481F522BB01D8300DACC6E /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		43481F542BB01E3F00DACC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		43481F562BB0417600DACC6E /* OTPSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSuccessView.swift; sourceTree = "<group>"; };
+		43481F582BB0422A00DACC6E /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
+		4387D1632BB05E5900FD9432 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		4387D1652BB05E9600FD9432 /* Font+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Default.swift"; sourceTree = "<group>"; };
+		4387D1672BB0649500FD9432 /* String+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Default.swift"; sourceTree = "<group>"; };
+		43D5D5E62BB1B26B00C4715B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		43D5D5E82BB1B35B00C4715B /* ImageSizeModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeModifier.swift; sourceTree = "<group>"; };
+		43D5D5EE2BB1B62400C4715B /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		43D5D5F42BB1BE7200C4715B /* InventoryRecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRecordingView.swift; sourceTree = "<group>"; };
+		43D5D5F82BB1BF7100C4715B /* InventoryRecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRecordingViewModel.swift; sourceTree = "<group>"; };
+		43D5D5FB2BB1C18600C4715B /* InventoryRecordingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRecordingModel.swift; sourceTree = "<group>"; };
 		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
 		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +116,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43481F462BAFF16E00DACC6E /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				43481F482BAFF17800DACC6E /* View */,
+				43481F472BAFF17300DACC6E /* ViewModel */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		43481F472BAFF17300DACC6E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43481F4C2BB004A500DACC6E /* OTPViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43481F482BAFF17800DACC6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43481F492BAFF39D00DACC6E /* OTPView.swift */,
+				43481F562BB0417600DACC6E /* OTPSuccessView.swift */,
+				43481F582BB0422A00DACC6E /* AgreementView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43481F552BB01EC100DACC6E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4387D1632BB05E5900FD9432 /* Poppins-SemiBold.ttf */,
+				43481F4E2BB01D6600DACC6E /* Poppins-Bold.ttf */,
+				43481F502BB01D7500DACC6E /* Poppins-Medium.ttf */,
+				43481F522BB01D8300DACC6E /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		43D5D5E32BB1B1A100C4715B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4387D1672BB0649500FD9432 /* String+Default.swift */,
+				4387D1652BB05E9600FD9432 /* Font+Default.swift */,
+				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
+				43481F552BB01EC100DACC6E /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		43D5D5E42BB1B1AD00C4715B /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5E62BB1B26B00C4715B /* ImagePicker.swift */,
+				43D5D5E82BB1B35B00C4715B /* ImageSizeModifier.swift */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		43D5D5E52BB1B25A00C4715B /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5E42BB1B1AD00C4715B /* ImagePicker */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		43D5D5EA2BB1B56B00C4715B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5ED2BB1B60200C4715B /* View */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		43D5D5ED2BB1B60200C4715B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5EE2BB1B62400C4715B /* InputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43D5D5F12BB1BDE200C4715B /* InventoryRecording */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5F32BB1BDFA00C4715B /* View */,
+				43D5D5F22BB1BDEC00C4715B /* ViewModel */,
+				43D5D5FA2BB1C16900C4715B /* Model */,
+			);
+			path = InventoryRecording;
+			sourceTree = "<group>";
+		};
+		43D5D5F22BB1BDEC00C4715B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5F82BB1BF7100C4715B /* InventoryRecordingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		43D5D5F32BB1BDFA00C4715B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5F42BB1BE7200C4715B /* InventoryRecordingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43D5D5FA2BB1C16900C4715B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43D5D5FB2BB1C18600C4715B /* InventoryRecordingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A860B4C42BAFCF1200E0D60C = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +256,7 @@
 		A860B4CF2BAFCF1200E0D60C /* MotionHackClone */ = {
 			isa = PBXGroup;
 			children = (
+				43481F542BB01E3F00DACC6E /* Info.plist */,
 				A860B50D2BAFD81F00E0D60C /* Common */,
 				A860B4FF2BAFD0C900E0D60C /* Features */,
 				A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */,
@@ -146,6 +297,9 @@
 		A860B4FF2BAFD0C900E0D60C /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				43D5D5F12BB1BDE200C4715B /* InventoryRecording */,
+				43D5D5EA2BB1B56B00C4715B /* Input */,
+				43481F462BAFF16E00DACC6E /* OTP */,
 				A860B5062BAFD15300E0D60C /* Login */,
 			);
 			path = Features;
@@ -179,8 +333,8 @@
 		A860B50D2BAFD81F00E0D60C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
-				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+				43D5D5E52BB1B25A00C4715B /* Reusable */,
+				43D5D5E32BB1B1A100C4715B /* Resources */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -290,7 +444,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A860B4D82BAFCF1700E0D60C /* Preview Assets.xcassets in Resources */,
+				43481F512BB01D7500DACC6E /* Poppins-Medium.ttf in Resources */,
+				43481F4F2BB01D6600DACC6E /* Poppins-Bold.ttf in Resources */,
+				4387D1642BB05E5900FD9432 /* Poppins-SemiBold.ttf in Resources */,
 				A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */,
+				43481F532BB01D8300DACC6E /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +473,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4387D1662BB05E9600FD9432 /* Font+Default.swift in Sources */,
+				43481F4D2BB004A500DACC6E /* OTPViewModel.swift in Sources */,
+				43481F592BB0422A00DACC6E /* AgreementView.swift in Sources */,
 				A860B4DA2BAFCF1700E0D60C /* Persistence.swift in Sources */,
+				43481F572BB0417600DACC6E /* OTPSuccessView.swift in Sources */,
 				A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */,
 				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
+				43D5D5EF2BB1B62400C4715B /* InputView.swift in Sources */,
 				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
+				43481F4A2BAFF39D00DACC6E /* OTPView.swift in Sources */,
 				A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */,
+				43D5D5FC2BB1C18600C4715B /* InventoryRecordingModel.swift in Sources */,
 				A860B50F2BAFD85C00E0D60C /* Color+Default.swift in Sources */,
+				43D5D5F92BB1BF7100C4715B /* InventoryRecordingViewModel.swift in Sources */,
+				43D5D5F52BB1BE7200C4715B /* InventoryRecordingView.swift in Sources */,
+				43D5D5E72BB1B26B00C4715B /* ImagePicker.swift in Sources */,
+				4387D1682BB0649500FD9432 /* String+Default.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
+				43D5D5E92BB1B35B00C4715B /* ImageSizeModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -463,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -484,11 +654,13 @@
 				DEVELOPMENT_TEAM = HCYSF3K835;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionHackClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,11 +685,13 @@
 				DEVELOPMENT_TEAM = HCYSF3K835;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionHackClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
