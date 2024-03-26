@@ -10,10 +10,6 @@ import Charts
 
 struct SalesDataView: View {
     
-    var data: [SalesDataModel] = [
-        .init(name: "Data", date: Date.now, totalSales: 12, totalQuantity: "90 Kg"),
-    ]
-    
     @StateObject var viewModel = SalesDataViewModel()
     
     var body: some View {
@@ -44,7 +40,7 @@ struct SalesDataView: View {
                                         .font(.system(size: 10))
                                         .fontWeight(.medium)
                                         .foregroundColor(Color.white)
-                                    Text("Rp. \(viewModel.totalSalesData())")
+                                    Text("\(viewModel.totalAmount)")
                                         .font(.system(size: 12))
                                         .bold()
                                         .foregroundColor(Color.white)
@@ -84,12 +80,12 @@ struct SalesDataView: View {
                             .background(Color.white)
                             .cornerRadius(12)
                             .padding(.top, 15)
-                            .padding(.bottom, 60)
                     })
                     VStack(alignment: .leading) {
                         Text("Grafik Data Penjualan")
                             .fontWeight(.semibold)
                             .padding(.bottom, 15)
+                            .padding(.top, 60)
                         VStack(alignment: .leading) {
                             VStack {
                                 Text("Minggu Ini")
@@ -100,10 +96,13 @@ struct SalesDataView: View {
                                     .foregroundColor(LocalColor.blue)
                             }
                             Chart {
-                                BarMark(
-                                    x: .value("Data", data[0].name ?? ""),
-                                    y: .value("Total Count", data[0].date!)
-                                )
+                                ForEach(viewModel.salesDataModel) { data in
+                                    LineMark(
+                                        x: .value("Data", data.date?.formatted() ?? "Error"),
+                                        y: .value("Total Count", data.totalSales ?? 0)
+                                    )
+                                    .lineStyle(StrokeStyle(lineWidth: 2.56))
+                                }
                             }
                             .frame(height: 200)
                         }
@@ -116,13 +115,15 @@ struct SalesDataView: View {
                                 .fontWeight(.semibold)
                                 .font(.system(size: 12))
                             Spacer()
-                            Text("Lihat Lainnya")
-                                .foregroundColor(LocalColor.secondaryBlack)
-                                .fontWeight(.semibold)
-                                .font(.system(size: 12))
+                            NavigationLink(destination: SalesDataDetailView(), label: {
+                                Text("Lihat Lainnya")
+                                    .foregroundColor(LocalColor.secondaryBlack)
+                                    .fontWeight(.semibold)
+                                    .font(.system(size: 12))
+                            })
                         }
                     }
-                    ForEach(viewModel.salesListData.prefix(3), id: \.self) { item in
+                    ForEach(viewModel.salesListData.suffix(3).reversed(), id: \.self) { item in
                         ListHistorySales(item)
                     }
                     Spacer()
@@ -131,6 +132,7 @@ struct SalesDataView: View {
                 .onAppear {
                     Task {
                         await viewModel.loadLocalSalesData()
+                        await viewModel.getListSalesFromModel()
                     }
                 }
             }

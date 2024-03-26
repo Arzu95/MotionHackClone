@@ -58,6 +58,7 @@ struct InputSalesDataView: View {
                         Text("Total Penjualan")
                             .bold()
                         TextField("Masukan total penjualan", text: $viewModel.fieldTotalSales)
+                            .keyboardType(.numberPad)
                             .frame(height: 42)
                             .padding(.horizontal, 12)
                             .overlay(
@@ -119,7 +120,7 @@ extension InputSalesDataView {
                     .cornerRadius(10)
                     .background(Color.white)
                 Button(action: {
-                    viewModel.saveDate()
+                    viewModel.saveDate(&viewModel.fieldDate)
                     viewModel.showDatePicker.toggle()
                 }, label: {
                     Text("Konfirmasi")

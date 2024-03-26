@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A17E5CD2BB127A8008E7F4D /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E5CC2BB127A8008E7F4D /* Authentication.swift */; };
 		8A17E5D22BB1286F008E7F4D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A17E5D12BB1286F008E7F4D /* UserModel.swift */; };
+		8A4DFA902BB29F9700711BAC /* SalesDataDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4DFA8F2BB29F9700711BAC /* SalesDataDetailView.swift */; };
 		8AB6B8542BB010EC007DFB5A /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB6B8532BB010EC007DFB5A /* ButtonPrimary.swift */; };
 		8ABA78A32BB0067E00518967 /* UnderlineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA78A22BB0067E00518967 /* UnderlineTextField.swift */; };
 		8ABA78A52BB0088B00518967 /* UnderlineSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA78A42BB0088B00518967 /* UnderlineSecureField.swift */; };
@@ -29,6 +30,7 @@
 		8AF3BB112BB1742C00211357 /* SalesDataRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB102BB1742C00211357 /* SalesDataRepo.swift */; };
 		8AF3BB132BB1751B00211357 /* SalesDataLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB122BB1751B00211357 /* SalesDataLocalDataSource.swift */; };
 		8AF3BB152BB175B900211357 /* SalesDataDefaultLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF3BB142BB175B900211357 /* SalesDataDefaultLocalDataSource.swift */; };
+		8AFF0D302BB22B9A00CE7A05 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFF0D2F2BB22B9A00CE7A05 /* Currency.swift */; };
 		A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */; };
 		A860B4D32BAFCF1200E0D60C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860B4D22BAFCF1200E0D60C /* ContentView.swift */; };
 		A860B4D52BAFCF1700E0D60C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A860B4D42BAFCF1700E0D60C /* Assets.xcassets */; };
@@ -64,6 +66,7 @@
 /* Begin PBXFileReference section */
 		8A17E5CC2BB127A8008E7F4D /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		8A17E5D12BB1286F008E7F4D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8A4DFA8F2BB29F9700711BAC /* SalesDataDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataDetailView.swift; sourceTree = "<group>"; };
 		8AB6B8532BB010EC007DFB5A /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
 		8ABA78A22BB0067E00518967 /* UnderlineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineTextField.swift; sourceTree = "<group>"; };
 		8ABA78A42BB0088B00518967 /* UnderlineSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSecureField.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		8AF3BB102BB1742C00211357 /* SalesDataRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataRepo.swift; sourceTree = "<group>"; };
 		8AF3BB122BB1751B00211357 /* SalesDataLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataLocalDataSource.swift; sourceTree = "<group>"; };
 		8AF3BB142BB175B900211357 /* SalesDataDefaultLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesDataDefaultLocalDataSource.swift; sourceTree = "<group>"; };
+		8AFF0D2F2BB22B9A00CE7A05 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		A860B4CD2BAFCF1200E0D60C /* MotionHackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionHackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A860B4D02BAFCF1200E0D60C /* MotionHackCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHackCloneApp.swift; sourceTree = "<group>"; };
 		A860B4D22BAFCF1200E0D60C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				A860B4D42BAFCF1700E0D60C /* Assets.xcassets */,
 				A860B50E2BAFD85C00E0D60C /* Color+Default.swift */,
 				A860B5112BAFD9CD00E0D60C /* Images+Default.swift */,
+				8AFF0D2F2BB22B9A00CE7A05 /* Currency.swift */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 			children = (
 				8AF3BB012BB14C6900211357 /* SalesDataView.swift */,
 				8AF3BB032BB14CD700211357 /* InputSalesDataView.swift */,
+				8A4DFA8F2BB29F9700711BAC /* SalesDataDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -516,12 +522,14 @@
 				8AE0CCFA2BAFF99500B3AAD9 /* SignUpViewModel.swift in Sources */,
 				A860B50C2BAFD19900E0D60C /* LoginViewModel.swift in Sources */,
 				8AF3BB022BB14C6900211357 /* SalesDataView.swift in Sources */,
+				8AFF0D302BB22B9A00CE7A05 /* Currency.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
 				8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */,
 				8AF3BB062BB14E8900211357 /* SalesDataViewModel.swift in Sources */,
 				A860B50A2BAFD18700E0D60C /* LoginView.swift in Sources */,
 				8A17E5D22BB1286F008E7F4D /* UserModel.swift in Sources */,
 				A860B5122BAFD9CD00E0D60C /* Images+Default.swift in Sources */,
+				8A4DFA902BB29F9700711BAC /* SalesDataDetailView.swift in Sources */,
 				8AF3BB112BB1742C00211357 /* SalesDataRepo.swift in Sources */,
 				8AB6B8542BB010EC007DFB5A /* ButtonPrimary.swift in Sources */,
 				8AF3BB152BB175B900211357 /* SalesDataDefaultLocalDataSource.swift in Sources */,

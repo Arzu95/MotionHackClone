@@ -13,15 +13,45 @@ final class SalesDataViewModel : ObservableObject {
     @Published var fieldTotalQuantity: String = ""
     @Published var fieldTotalSales: String = ""
     @Published var fieldDate: String = ""
+    @Published var fieldSearch: String = ""
     @Published var selectionDate: Date = Date()
     @Published var showDatePicker: Bool = false
     @Published var salesListData = [SalesData]()
+    @Published var salesDataModel: [SalesDataModel] = []
     @Published var error = ""
+    
+    var searchItem: [SalesDataModel] {
+        if fieldSearch.isEmpty {
+            return salesDataModel.compactMap({ $0 })
+        } else {
+            return salesDataModel.filter { item in
+                (item.date?.formatted() ?? "").contains(fieldSearch) ||
+                (item.date?.formatted() ?? "").contains(fieldSearch)
+            }
+        }
+    }
+    
+    var totalAmount: String {
+        return Currency().toRupiah("\(totalSalesData())")
+    }
     
     private let repository : SalesDataRepository
     
     init(repository: SalesDataRepository = SalesDataDefaultRepo()) {
         self.repository = repository
+    }
+    
+    func getListSalesFromModel() async {
+        do {
+            let data = try await repository.getListDataSalesModel()
+            DispatchQueue.main.sync { [weak self] in
+                self?.salesDataModel.append(contentsOf: data)
+            }
+        } catch {
+            DispatchQueue.main.sync {
+                self.error = "\(error)"
+            }
+        }
     }
     
     func totalSalesData() -> Double {
@@ -34,13 +64,12 @@ final class SalesDataViewModel : ObservableObject {
                 self.error = "\(error)"
             }
         }
-        print(total)
         return total
     }
     
-    func saveDate() -> String {
-        fieldDate = selectionDate.formatted()
-        return fieldDate
+    func saveDate(_ field: inout String) -> String {
+        field = selectionDate.formatted()
+        return field
     }
     
     func loadLocalSalesData() async {

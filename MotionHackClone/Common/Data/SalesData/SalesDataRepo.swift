@@ -12,4 +12,5 @@ protocol SalesDataRepository {
     func loadLocalSalesData() async throws -> [SalesData]
     func deleteLocalSalesData() throws
     func sumTotalSalesData(by salesData: [SalesData]) throws -> Double
+    func getListDataSalesModel() async throws -> [SalesDataModel]
 }

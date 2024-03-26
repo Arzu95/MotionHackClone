@@ -8,9 +8,10 @@
 import Foundation
 import SwiftUI
 import CoreData
+import Combine
 
 final class SalesDataDefaultLocalDataSouce: SalesDataLocalDataSource {
-
+    
     private let container: NSPersistentContainer
     
     init(persistenStorage : NSPersistentContainer = PersistenceController.shared.container) {
@@ -62,5 +63,26 @@ final class SalesDataDefaultLocalDataSouce: SalesDataLocalDataSource {
             totalSales += sale.total_penjualan
         }
         return totalSales
+    }
+    
+    func getSalesDataListModel() async throws -> [SalesDataModel] {
+        return try await withCheckedThrowingContinuation({ continuation in
+            do {
+                let dataEntity = try container.viewContext.fetch(SalesData.fetchRequest())
+                var data: [SalesDataModel] = []
+                for i in dataEntity {
+                    data.append(
+                        SalesDataModel(
+                            name: i.nama_barang,
+                            date: i.tanggal_input!,
+                            totalSales: i.total_penjualan,
+                            totalQuantity: i.total_kuantitas!)
+                    )
+                }
+                continuation.resume(returning: data)
+            } catch {
+                continuation.resume(throwing: error)
+            }
+        })
     }
 }

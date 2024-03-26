@@ -31,4 +31,8 @@ final class SalesDataDefaultRepo : SalesDataRepository {
         try self.salesDatalocal.sumTotalSales(by: salesData)
     }
 
+    func getListDataSalesModel() async throws -> [SalesDataModel] {
+        try await self.salesDatalocal.getSalesDataListModel()
+    }
+    
 }

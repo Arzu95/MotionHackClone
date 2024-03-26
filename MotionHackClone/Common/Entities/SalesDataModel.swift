@@ -8,6 +8,7 @@
 import Foundation
 
 class SalesDataModel : Codable, Identifiable {
+    
     var id = UUID()
     let name: String?
     let date: Date?
@@ -20,4 +21,5 @@ class SalesDataModel : Codable, Identifiable {
         self.totalSales = totalSales
         self.totalQuantity = totalQuantity
     }
+
 }
