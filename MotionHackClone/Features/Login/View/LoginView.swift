@@ -84,7 +84,7 @@ struct LoginView: View {
                             RoundedRectangle(cornerRadius: 12)
                                 .frame(width: 128, height: 57)
                                 .foregroundColor(.white)
-                                .shadow(radius: 4, x: 0, y: 4)
+                                .shadow(radius: 2, x: 0, y: 2)
                             HStack{
                                 Image("icon-google")
                                 Text("Google")
@@ -101,7 +101,7 @@ struct LoginView: View {
                             RoundedRectangle(cornerRadius: 12)
                                 .frame(width: 128, height: 57)
                                 .foregroundColor(.white)
-                                .shadow(radius: 4, x: 0, y: 4)
+                                .shadow(radius: 2, x: 0, y: 2)
                             HStack{
                                 Image("icon-facebook")
                                 Text("Facebook")

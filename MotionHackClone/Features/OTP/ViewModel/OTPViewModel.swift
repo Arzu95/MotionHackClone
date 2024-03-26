@@ -22,26 +22,25 @@ class OTPViewModel: ObservableObject {
     //timer
     @Published var timerSubscription: AnyCancellable?
     @Published var seconds: Int
-    @Published var moveToNextView = false
     
-    init(numberOfFields: Int) {
-        self.numberOfFields = numberOfFields
+    init() {
+        self.numberOfFields = 4
         self.enterValue = Array(repeating: "", count: numberOfFields)
         self.seconds = 0
     }
     
     // Timer Done
     // Timer digunakan untuk OTP Success screen agar bisa otomatis lanjut ke view selanjutya
-    func startTimer(duration: Int) {
+    func startTimer(duration: Int, completion: @escaping (Bool) -> Void) {
         self.seconds = duration
         timerSubscription = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
             .sink { _ in
                 if  self.seconds > 0 {
                     self.seconds -= 1
-                    self.moveToNextView = false
+                    completion(true)
                 } else {
                     self.timerSubscription?.cancel()
-                    self.moveToNextView = true
+                    completion(false)
                 }
             }
     }

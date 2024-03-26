@@ -15,4 +15,5 @@ enum LocalImage {
     static let clock = Image(systemName: "clock")
     static let inventaris = Image("icon-inventaris")
     static let penjualan = Image("icon-penjualan")
+    static let file = Image("icon-file")
 }

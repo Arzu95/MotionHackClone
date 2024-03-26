@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct OTPView: View {
-    @StateObject private var vm = OTPViewModel(numberOfFields: 4)
+    @StateObject private var vm = OTPViewModel()
     @FocusState var fieldFocus: Int?
     @State var showAlert: Bool = false
     @State var isActive: Bool = false
@@ -30,7 +30,8 @@ struct OTPView: View {
                 }
                 Spacer()
                 
-                NavigationLink(destination: OTPSuccessView(), isActive: $isActive) {
+                NavigationLink(destination: OTPSuccessView(vm: OTPViewModel()),
+                               isActive: $isActive) {
                     EmptyView()
                 }
                 // send code verification
@@ -97,8 +98,8 @@ extension OTPView {
     struct header: View {
         var body: some View {
             VStack(spacing: 5) {
-                Text("Kode OTP")
-                    .fontModifier(type: "Poppins-Bold",size: 27, weight: .bold)
+                Text("Verifikasi Kode OTP")
+                    .fontModifier(type: FontType.bold,size: 27, weight: .bold)
                     .padding()
                     .foregroundColor(Color("LocalBlue"))
                 Text("Kode OTP telah dikirim ke ")
@@ -129,9 +130,9 @@ extension OTPView {
         VStack(spacing: 10) {
             HStack(spacing:5) {
                 Text("Kirim ulang dalam")
-                    .fontModifier(type: "Poppins-regular",size: 12, weight: .regular)
+                    .fontModifier(type: FontType.regular,size: 12, weight: .regular)
                 Text("59 detik")
-                    .fontModifier(type: "Poppins-medium",size: 12, weight: .medium)
+                    .fontModifier(type: FontType.medium,size: 12, weight: .medium)
             }
             HStack(spacing: 5) {
                 Text("Kode belum masuk?")
