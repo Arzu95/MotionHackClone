@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SalesDataDetailView: View {
     @StateObject var viewModel = SalesDataViewModel()
+    
     var body: some View {
         NavigationView {
             ZStack {

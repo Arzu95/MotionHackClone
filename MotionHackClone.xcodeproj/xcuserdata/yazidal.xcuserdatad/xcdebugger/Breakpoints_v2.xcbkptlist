@@ -18,6 +18,38 @@
             endingLineNumber = "14"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A92CF200-FF67-4804-BCFD-772157D70BA7 - b3942bfeb7b0db6f"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MotionHackClone.SignUpView.body.getter : some"
+                  moduleName = "MotionHackClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazidal/Documents/Development/MotionHack/MotionHackClone/MotionHackClone/Features/SignUp/View/SignUpView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "A92CF200-FF67-4804-BCFD-772157D70BA7 - 1bf5fa6929690637"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in MotionHackClone.SignUpView.body.getter : some"
+                  moduleName = "MotionHackClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yazidal/Documents/Development/MotionHack/MotionHackClone/MotionHackClone/Features/SignUp/View/SignUpView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

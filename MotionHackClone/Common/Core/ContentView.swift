@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    @AppStorage("isAuthenticated") var isAuthenticated = false
     var body: some View {
-        VStack{
-            
+        ZStack {
+            if isAuthenticated {
+                SalesDataView()
+            } else {
+                AuthenticationView()
+            }
         }
     }
 }

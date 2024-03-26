@@ -10,35 +10,52 @@ import AuthenticationServices
 import GoogleSignIn
 import FirebaseCore
 import FirebaseAuth
+import SwiftUI
 
-class SignUpViewModel : ObservableObject{
+class AuthenticationViewModel : ObservableObject{
     @Published var fieldNama: String = ""
     @Published var fieldEmail: String = ""
+    @Published var fieldPassswordLogin: String = ""
     @Published var fieldPasssword: String = ""
     @Published var fieldConfirmPassword: String = ""
     @Published var isVisiblePassword: Bool = true
     @Published var isVisibleConfirm: Bool = true
+    @Published var errorMessage: String = ""
+    @AppStorage("isAuthenticated") var isAuthenticated = false
+    @Published var isSignUpView = false
+    @Published var user: User?
     
     var confirmPassword: Bool = false
     
-    func signUp() {
-        guard !fieldEmail.isEmpty, !fieldPasssword.isEmpty else {
-            fatalError("No Email and Password Found")
-        }
-        
-        Task {
-            do {
-                let userData = try await Authentication.shared.signUpUser(email: fieldEmail, password: fieldPasssword)
-                print("Succes Sign Up")
-                print(userData)
-            } catch {
-                print("Error : \(error)")
+    private let authRepo: AuthRepository
+    
+    init(authRepo: AuthRepository = AuthDefaultRepository()) {
+        self.authRepo = authRepo
+    }
+    
+    func signUpUser() {
+        authRepo.signUp(with: fieldEmail, password: fieldNama, completion: { [weak self ] error in
+            DispatchQueue.main.async {
+                self?.errorMessage = "\(error?.localizedDescription)"
+                self?.signInUser()
             }
-        }
+        })
+    }
+    
+    func signInUser() {
+        authRepo.login(with: fieldEmail, password: fieldPasssword, completion: { [weak self] error in
+            DispatchQueue.main.async { [weak self] in
+                withAnimation {
+                    self?.isAuthenticated = true
+                }
+                print(self?.isAuthenticated)
+                self?.errorMessage = "\(error?.localizedDescription)"
+            }
+        })
     }
     
     func googleSignIn() async throws {
-    
+        
         guard let clientID = FirebaseApp.app()?.options.clientID else {
             fatalError("no firbase clientID found")
         }
@@ -69,6 +86,7 @@ class SignUpViewModel : ObservableObject{
     func googleSignOut() async throws {
         GIDSignIn.sharedInstance.signOut()
         try Auth.auth().signOut()
+        self.isAuthenticated = false
     }
 }
 

@@ -7,6 +7,8 @@
 
 import Foundation
 import SwiftUI
+import FirebaseAuth
+import GoogleSignIn
 
 final class SalesDataViewModel : ObservableObject {
     @Published var fieldNameDesc: String = ""
@@ -18,6 +20,7 @@ final class SalesDataViewModel : ObservableObject {
     @Published var showDatePicker: Bool = false
     @Published var salesListData = [SalesData]()
     @Published var salesDataModel: [SalesDataModel] = []
+    @AppStorage("isAuthenticated") var isAuthenticated = false
     @Published var error = ""
     
     var searchItem: [SalesDataModel] {
@@ -36,9 +39,14 @@ final class SalesDataViewModel : ObservableObject {
     }
     
     private let repository : SalesDataRepository
+    private let authRepo : AuthRepository
     
-    init(repository: SalesDataRepository = SalesDataDefaultRepo()) {
+    init(
+        repository: SalesDataRepository = SalesDataDefaultRepo(),
+        authRepo: AuthRepository = AuthDefaultRepository()
+    ) {
         self.repository = repository
+        self.authRepo = authRepo
     }
     
     func getListSalesFromModel() async {
@@ -117,5 +125,11 @@ final class SalesDataViewModel : ObservableObject {
                 self.error = "\(error)"
             }
         }
+    }
+    
+    func googleSignOut() async throws {
+        GIDSignIn.sharedInstance.signOut()
+        try Auth.auth().signOut()
+        self.isAuthenticated = false
     }
 }

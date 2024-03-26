@@ -123,9 +123,18 @@ struct SalesDataView: View {
                             })
                         }
                     }
-                    ForEach(viewModel.salesListData.suffix(3).reversed(), id: \.self) { item in
-                        ListHistorySales(item)
+                    if viewModel.salesDataModel.isEmpty {
+                        Text("Belum Ada Riwayat")
+                    } else {
+                        ForEach(viewModel.salesListData.suffix(3).reversed(), id: \.self) { item in
+                            ListHistorySales(item)
+                        }
                     }
+                    ButtonPrimary(title: "Sign Out", action: {
+                        Task {
+                            try? await viewModel.googleSignOut()
+                        }
+                    })
                     Spacer()
                 }
                 .padding(.horizontal, 30)
