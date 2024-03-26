@@ -12,4 +12,8 @@ extension Image {
     static let facebook: Image = Image("icon-facebook")
     static let or_with: Image = Image("or-with")
     static let logo: Image = Image("logo")
+    static let icon_calendar: Image = Image("icon-calendar")
+    static let icon_wallet: Image = Image("icon-wallet")
+    static let icon_output: Image = Image("icon-output")
+    static let icon_phone: Image = Image("icon-phone")
 }
