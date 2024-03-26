@@ -1,29 +1,17 @@
 {
   "images" : [
     {
-<<<<<<< HEAD:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-file.imageset/Contents.json
-      "filename" : "Vector.png",
-=======
       "filename" : "Icon.png",
->>>>>>> b2f0da75559e18cee079b0734f54c5d55915f3ed:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-wallet.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-<<<<<<< HEAD:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-file.imageset/Contents.json
-      "filename" : "Vector@2x.png",
-=======
       "filename" : "Icon@2x.png",
->>>>>>> b2f0da75559e18cee079b0734f54c5d55915f3ed:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-wallet.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-<<<<<<< HEAD:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-file.imageset/Contents.json
-      "filename" : "Vector@3x.png",
-=======
       "filename" : "Icon@3x.png",
->>>>>>> b2f0da75559e18cee079b0734f54c5d55915f3ed:MotionHackClone/Common/Resources/Assets.xcassets/Images/icon-wallet.imageset/Contents.json
       "idiom" : "universal",
       "scale" : "3x"
     }
