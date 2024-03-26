@@ -14,6 +14,9 @@
 		43481F532BB01D8300DACC6E /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43481F522BB01D8300DACC6E /* Poppins-Regular.ttf */; };
 		43481F572BB0417600DACC6E /* OTPSuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F562BB0417600DACC6E /* OTPSuccessView.swift */; };
 		43481F592BB0422A00DACC6E /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43481F582BB0422A00DACC6E /* AgreementView.swift */; };
+		434A48D82BB2FC0100AE323A /* InventoryItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A48D72BB2FC0100AE323A /* InventoryItemList.swift */; };
+		434A48DA2BB3030600AE323A /* InventoryRecordingFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A48D92BB3030600AE323A /* InventoryRecordingFormView.swift */; };
+		434A48DE2BB3211F00AE323A /* Color+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A48DD2BB3211E00AE323A /* Color+Default.swift */; };
 		4387D1642BB05E5900FD9432 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4387D1632BB05E5900FD9432 /* Poppins-SemiBold.ttf */; };
 		4387D1662BB05E9600FD9432 /* Font+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387D1652BB05E9600FD9432 /* Font+Default.swift */; };
 		4387D1682BB0649500FD9432 /* String+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387D1672BB0649500FD9432 /* String+Default.swift */; };
@@ -91,6 +94,9 @@
 		43481F542BB01E3F00DACC6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		43481F562BB0417600DACC6E /* OTPSuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSuccessView.swift; sourceTree = "<group>"; };
 		43481F582BB0422A00DACC6E /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
+		434A48D72BB2FC0100AE323A /* InventoryItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItemList.swift; sourceTree = "<group>"; };
+		434A48D92BB3030600AE323A /* InventoryRecordingFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryRecordingFormView.swift; sourceTree = "<group>"; };
+		434A48DD2BB3211E00AE323A /* Color+Default.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Default.swift"; sourceTree = "<group>"; };
 		4387D1632BB05E5900FD9432 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		4387D1652BB05E9600FD9432 /* Font+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Default.swift"; sourceTree = "<group>"; };
 		4387D1672BB0649500FD9432 /* String+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Default.swift"; sourceTree = "<group>"; };
@@ -217,6 +223,7 @@
 				4387D1672BB0649500FD9432 /* String+Default.swift */,
 				4387D1652BB05E9600FD9432 /* Font+Default.swift */,
 				A860B5112BAFD9CD00E0D60C /* LocalImage.swift */,
+				434A48DD2BB3211E00AE323A /* Color+Default.swift */,
 				43481F552BB01EC100DACC6E /* Fonts */,
 				8AA8EEF12BB2F325008E3463 /* Color+Default.swift */,
 				8AA8EEF32BB2F38D008E3463 /* Currency.swift */,
@@ -279,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				43D5D5F42BB1BE7200C4715B /* InventoryRecordingView.swift */,
+				434A48D72BB2FC0100AE323A /* InventoryItemList.swift */,
+				434A48D92BB3030600AE323A /* InventoryRecordingFormView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,29 +372,6 @@
 				A860B4D22BAFCF1200E0D60C /* ContentView.swift */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		8AE12EB92BAFF5E300880D38 /* SignUp */ = {
-			isa = PBXGroup;
-			children = (
-				8AE12EBB2BAFF5F200880D38 /* ViewModel */,
-				8AE12EBA2BAFF5EE00880D38 /* View */,
-			);
-			path = SignUp;
-			sourceTree = "<group>";
-		};
-		8AE12EBA2BAFF5EE00880D38 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8AE12EBB2BAFF5F200880D38 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8AF3BAFE2BB14C1A00211357 /* SalesData */ = {
@@ -498,7 +484,6 @@
 			isa = PBXGroup;
 			children = (
 				8AF3BAFE2BB14C1A00211357 /* SalesData */,
-				8AE12EB92BAFF5E300880D38 /* SignUp */,
 				43D5D5F12BB1BDE200C4715B /* InventoryRecording */,
 				43D5D5EA2BB1B56B00C4715B /* Input */,
 				43481F462BAFF16E00DACC6E /* OTP */,
@@ -703,6 +688,7 @@
 				8AE0CCFA2BAFF99500B3AAD9 /* AuthenticationViewModel.swift in Sources */,
 				8AF3BB022BB14C6900211357 /* SalesDataView.swift in Sources */,
 				A860B4DD2BAFCF1700E0D60C /* MotionHackClone.xcdatamodeld in Sources */,
+				434A48DA2BB3030600AE323A /* InventoryRecordingFormView.swift in Sources */,
 				8AE0CCFD2BAFFAA400B3AAD9 /* Validator.swift in Sources */,
 				8AA8EEF42BB2F38D008E3463 /* Currency.swift in Sources */,
 				8AF3BB062BB14E8900211357 /* SalesDataViewModel.swift in Sources */,
@@ -716,6 +702,7 @@
 				8AA8EEFC2BB2F5C7008E3463 /* AuthDefaultRemoteDataSource.swift in Sources */,
 				8AA8EEFE2BB2F5D5008E3463 /* AuthRemoteDataSource.swift in Sources */,
 				8AA8EEF72BB2F591008E3463 /* AuthDefaultRepository.swift in Sources */,
+				434A48DE2BB3211F00AE323A /* Color+Default.swift in Sources */,
 				8A17E5D22BB1286F008E7F4D /* UserModel.swift in Sources */,
 				43481F4A2BAFF39D00DACC6E /* OTPView.swift in Sources */,
 				A860B5122BAFD9CD00E0D60C /* LocalImage.swift in Sources */,
@@ -732,6 +719,7 @@
 				43D5D5E72BB1B26B00C4715B /* ImagePicker.swift in Sources */,
 				4387D1682BB0649500FD9432 /* String+Default.swift in Sources */,
 				A860B4D12BAFCF1200E0D60C /* MotionHackCloneApp.swift in Sources */,
+				434A48D82BB2FC0100AE323A /* InventoryItemList.swift in Sources */,
 				8AE0CCFF2BAFFB3A00B3AAD9 /* ValidatorModifier.swift in Sources */,
 				8A17E5CD2BB127A8008E7F4D /* Authentication.swift in Sources */,
 				43D5D5E92BB1B35B00C4715B /* ImageSizeModifier.swift in Sources */,

@@ -11,6 +11,7 @@ enum LocalColor {
     static let blue: Color = Color("Primary Color - Normal Blue")
     static let bluee: Color = Color("Primary Color - Normal Blue")
     static let grayy: Color = Color("gray")
+    static let baseColor = Color("BaseColor")
     static let darkBlue: Color = Color("Dark Blue")
     static let secondaryBlack: Color = Color("Secondary Black")
     static let secondaryWhite: Color = Color("Secondary White")

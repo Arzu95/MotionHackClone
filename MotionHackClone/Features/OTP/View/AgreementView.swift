@@ -103,7 +103,6 @@ struct AgreementView: View {
                                         .cornerRadius(20)
                                         
                                 }
-
                             }
                         }
                         .frame(maxHeight: .infinity, alignment: .bottom)
