@@ -1,11 +1,11 @@
 //
-//  Images+Default.swift
+//  Image+Default.swift
 //  MotionHackClone
 //
-//  Created by Muhammad Arzu on 24/03/24.
+//  Created by Yazid Al Ghozali on 26/03/24.
 //
 
-import SwiftUI
+import Foundation
 
 extension Image {
     static let google: Image = Image("icon-google")
